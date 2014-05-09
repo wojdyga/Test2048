@@ -11,11 +11,11 @@ libraryDependencies += "org.scalatest" % "scalatest_2.10" % "2.1.0" % "test"
 proguardSettings
 
 ProguardKeys.options in Proguard := Seq(
-"-injars /home/alek/progfun-workspace/Test2048/target/scala-2.10/classes",
-"-injars /home/alek/progfun-workspace/Test2048/src(META-INF/MANIFEST.MF)",
-"-injars /home/alek/.sbt/boot/scala-2.10.2/lib/scala-library.jar(!META-INF/MANIFEST.MF)",
-"-libraryjars /usr/lib64/jvm/java-1.7.0-openjdk-1.7.0/jre/lib/rt.jar",
-"-outjars /home/alek/progfun-workspace/Test2048/target/scala-2.10/proguard/test2048_2.10-1.0.jar",
+"-injars <user.dir>/target/scala-2.10/classes",
+"-injars <user.dir>/src(META-INF/MANIFEST.MF)",
+"-injars <user.home>/.sbt/boot/scala-2.10.2/lib/scala-library.jar(!META-INF/MANIFEST.MF)",
+"-libraryjars <java.home>/lib/rt.jar",
+"-outjars <user.dir>/target/scala-2.10/proguard/test2048_2.10-1.0.jar",
 "-dontnote", 
 "-dontwarn", 
 "-ignorewarnings", 
